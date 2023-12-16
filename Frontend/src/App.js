@@ -38,6 +38,7 @@ import axios from 'axios';
 
 
 function App() {
+  axios.defaults.withCredentials = true;
   axios.post('https://vintage-items-limited-api.vercel.app')
     return (
 
