@@ -14,7 +14,7 @@ const port = 5000;
 app.use(bodyParser.json());
 app.use(cors());
 app.use(cors({
-  origin:["https://vintage-items-limited.vercel.app"],
+  origin:["https://vintage-items-limited-frontend.vercel.app"],
   methods:["POST","GET"],
   credentials:true
 }
