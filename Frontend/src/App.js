@@ -33,18 +33,15 @@ import UserAdd from './Components/UserAdd';
 import PracComp from './Components/PracComp';
 import Fpractice from './Components/Fpractice';
 import Admindetails from './Components/Admindetails';
-
-const appStyle = {
-  // marginTop: '120px', 
-
-};
+import axios from 'axios';
 
 
 
 function App() {
+  axios.post('https://deploy-mern-api.vercel.app/register')
     return (
 
-      <div style={appStyle}>
+      <div >
   
       <Router>  
    
