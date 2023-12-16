@@ -14,7 +14,7 @@ const port = 5000;
 app.use(bodyParser.json());
 app.use(cors());
 app.use(cors({
-  origin:["http://deploy-mern-1whq.vercel.app"],
+  origin:["https://vintage-items-limited-api.vercel.app"],
   methods:["POST","GET"],
   credentials:true
 }
