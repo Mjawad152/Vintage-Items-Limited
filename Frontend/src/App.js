@@ -38,7 +38,7 @@ import axios from 'axios';
 
 
 function App() {
-  axios.post('https://deploy-mern-api.vercel.app/register')
+  axios.post('https://vintage-items-limited-api.vercel.app')
     return (
 
       <div >
