@@ -16,7 +16,7 @@ app.use(cors());
 app.use(cors({
   origin:["https://vintage-items-limited-frontend.vercel.app"],
   methods:["POST","GET"],
-  credentials:true
+ 
 }
 ));
 mongoose.connect('mongodb+srv://Jawad:123@cluster0.pcrerog.mongodb.net/?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true });
