@@ -1,10 +1,8 @@
 import mongoose from "mongoose";
 
 const vintageSignSchema = new mongoose.Schema({
-    firstName: String,
-    lastName: String,
+    name: String,
     email: String,
-    phoneNumber: String,
     password: String,
 });
 

@@ -34,15 +34,18 @@ import PracComp from './Components/PracComp';
 import Fpractice from './Components/Fpractice';
 import Admindetails from './Components/Admindetails';
 import axios from 'axios';
+import Login from './Components/Login';
+import Signp from './Components/Signp';
 
 
 
 function App() {
-  axios.post('https://deploy-mern-api.vercel.app/register')
+  axios.post('https://vintage-items-limited-api.vercel.app')
     return (
 
       <div >
-  
+  {/* <Login/> */}
+  {/* <Signp/> */}
       <Router>  
    
      <CustomNavbar/>
@@ -65,6 +68,9 @@ function App() {
           <Route path='/Cart' element={<Cart/>}/>
           <Route path='/Contactus' element={<ContactUs/>}/>
           <Route path='/Aboutus' element={<Aboutus/>}/>
+          <Route path='/login' element={<Login/>}/>
+          <Route path='/Signp' element={<Signp/>}/>
+          <Route path='/Signuup' element={<Signp/>}/>
         </Routes>
         <Footer />
       </Router>

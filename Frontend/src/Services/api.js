@@ -74,30 +74,30 @@ export const deleteItem = async (itemId) => {
 
 
 
-export const uploadImage = async (formData) => {
-  try {
-    const response = await api.post('/upload-image', formData, {
-      headers: {
-        'Content-Type': 'multipart/form-data',
-      },
-    });
-    return response.data.imageUrl;
-  } catch (error) {
-    throw error;
-  }
-};
+// export const uploadImage = async (formData) => {
+//   try {
+//     const response = await api.post('/upload-image', formData, {
+//       headers: {
+//         'Content-Type': 'multipart/form-data',
+//       },
+//     });
+//     return response.data.imageUrl;
+//   } catch (error) {
+//     throw error;
+//   }
+// };
 
 
-export const getImageUrl = async () => {
-  try {
-    const response = await api.get('/get-image-url'); 
-    console.log(response.data.imageUrl);
-    return response.data.imageUrl;
+// export const getImageUrl = async () => {
+//   try {
+//     const response = await api.get('/get-image-url'); 
+//     console.log(response.data.imageUrl);
+//     return response.data.imageUrl;
     
-  } catch (error) {
-    throw error;
-  }
-};
+//   } catch (error) {
+//     throw error;
+//   }
+// };
 
 
 
@@ -105,10 +105,10 @@ export const getImageUrl = async () => {
 
 
 
-export const addData = async (value) =>{
-  console.log("API REACHED");
-  return await axios.post(`${baseURL}/prac`,value);
-}
+// export const addData = async (value) =>{
+//   console.log("API REACHED");
+//   return await axios.post(`${baseURL}/prac`,value);
+// }
 
 
 
