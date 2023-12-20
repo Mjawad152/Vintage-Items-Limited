@@ -21,6 +21,21 @@ app.use(cors({
 ));
 mongoose.connect('mongodb+srv://Jawad:123@cluster0.pcrerog.mongodb.net/?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true });
 
+<<<<<<< HEAD
+=======
+
+  
+
+  
+
+
+
+
+
+
+  
+
+>>>>>>> 9c01d1a535da3b4855ad09634618cbe8da87fa07
 
 
 
