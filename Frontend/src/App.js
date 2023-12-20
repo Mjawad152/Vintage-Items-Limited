@@ -40,8 +40,8 @@ import Signp from './Components/Signp';
 
 
 function App() {
-  // axios.defaults.withCredentials = true;
-  // axios.post('https://vintage-items-limited-api.vercel.app')
+
+  axios.post('https://vintage-items-limited-api.vercel.app')
     return (
 
       <div >

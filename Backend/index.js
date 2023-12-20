@@ -13,12 +13,12 @@ const port = 5000;
 
 app.use(bodyParser.json());
 app.use(cors());
-// app.use(cors({
-//   origin:["https://vintage-items-limited-frontend.vercel.app"],
-//   methods:["POST","GET"],
+app.use(cors({
+  origin:["https://vintage-items-limited-frontend.vercel.app"],
+  methods:["POST","GET"],
  
-// }
-// ));
+}
+));
 mongoose.connect('mongodb+srv://Jawad:123@cluster0.pcrerog.mongodb.net/?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true });
 
 
