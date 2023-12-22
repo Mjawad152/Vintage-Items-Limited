@@ -27,7 +27,7 @@ import ContactUs from './Components/ContactUs';
 import Aboutus from './Components/Aboutus';
 import Test from './Test';
 import YourComponent from './Components/YourComponent';
-import Signup from './Components/Signup';
+
 import UserProducts from './Components/UserProducts';
 import UserAdd from './Components/UserAdd';
 import PracComp from './Components/PracComp';
@@ -57,7 +57,7 @@ function App() {
           <Route path='/Shop' element={<TopProduct/>}/>
           <Route path='/Contact' element={<Footer/>}/>
           <Route path='/yourcart' element={<YourCart/>}/>
-          <Route path='/Signup' element={<Signup/>}/>
+        
           <Route path='/AdminDashboard' element={<AdminDashboard />}/>
           <Route path='/AdminDashboard/edit' element={<AdminDashboard type="edit"/>}/>
           <Route path='/AdminDashboard/Admindetails' element={<AdminDashboard type="Admindetails"/>}/>
