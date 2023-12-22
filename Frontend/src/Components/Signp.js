@@ -28,18 +28,7 @@ export default function Signp() {
         }
         signup(formdata);
     };
-    // const login = useGoogleLogin({
-    //     onSuccess: (credentialResponse) => {
-    //         const decodedToken = jwtDecode(credentialResponse.credential);
-    //         console.log('Decoded Token:', decodedToken);
-    //         onSuccess:tokenResponse =>console.log(tokenResponse),
-    //         setformdata({
-    //             ...formdata,
-    //             name: credentialResponse.profileObj.name,
-    //             email: credentialResponse.profileObj.email,
-    //         });
-    //     },
-    // });
+
 
 
     
