@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { signup } from '../Services/api';
-import { FcGoogle } from "react-icons/fc";
 import { GoogleLogin, useGoogleLogin } from '@react-oauth/google';
 import { jwtDecode } from "jwt-decode";
 // import { useGoogleLogin } from '@react-oauth/google';
