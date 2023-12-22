@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const baseURL = 'https://vintage-items-limited-api.vercel.app';
+const baseURL = 'http://localhost:5000';
 
 const api = axios.create({
   baseURL: baseURL,
@@ -81,39 +81,6 @@ export const deleteItem = async (itemId) => {
     throw error;
   }
 };
-
-
-
-
-// export const uploadImage = async (formData) => {
-//   try {
-//     const response = await api.post('/upload-image', formData, {
-//       headers: {
-//         'Content-Type': 'multipart/form-data',
-//       },
-//     });
-//     return response.data.imageUrl;
-//   } catch (error) {
-//     throw error;
-//   }
-// };
-
-
-// export const getImageUrl = async () => {
-//   try {
-//     const response = await api.get('/get-image-url'); 
-//     console.log(response.data.imageUrl);
-//     return response.data.imageUrl;
-    
-//   } catch (error) {
-//     throw error;
-//   }
-// };
-
-
-
-
-
 
 
 // export const addData = async (value) =>{
