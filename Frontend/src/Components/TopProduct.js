@@ -43,7 +43,7 @@ return (
     {data.map(item => (
       <div
         className="card"
-        style={{ backgroundColor: "black", width: "23rem", borderRadius: "20px", margin: "5px", padding: "15px" }}
+        style={{ backgroundColor: "black", width: "23rem", borderRadius: "20px", margin: "5px", padding: "15px", }}
         key={item._id}
       >
         <img
@@ -52,7 +52,7 @@ return (
           alt={item.name}
           style={{ width: '100%', height: '200px', objectFit: 'cover', borderTopLeftRadius: '15px', borderTopRightRadius: '15px', overflow: 'hidden', backgroundColor: "black" }}
         />
-        <div className="card-body" style={{ borderBottomLeftRadius: '15px', borderBottomRightRadius: '15px', overflow: 'hidden', backgroundColor: "black" }}>
+        <div className="card-body" style={{ borderBottomLeftRadius: '15px', borderBottomRightRadius: '15px', overflow: 'hidden', backgroundColor: "black",height:"300px" }}>
           <p>ID: {item._id}</p>
           <h5 className="card-title">Name: {item.name}</h5>
           <p className="card-text">Description: {item.description}</p>

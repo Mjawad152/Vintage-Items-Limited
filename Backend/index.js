@@ -7,7 +7,8 @@ import path from 'path';
 import { YourModel } from "./models/yourModel.js";
 import { signupModel } from './models/signupModel.js';
 import { userModel }from './models/userModel.js';
-
+import signupRouter from './routes/signupRouter.js';
+import loginRouter from './routes/loginRouter.js';
 const app = express();
 const port = 5000;
 
@@ -49,21 +50,25 @@ app.post('/add-item', async (req, res) => {
         res.status(500).json({ error: error.message });
     }
 });
-app.post('/sign-up', async (req, res) => {
+// app.post('/sign-up', async (req, res) => {
 
-        const {name,email,password } = req.body;
-        const signup = new signupModel({
-            name,
-           email,
-           password,
-        });
+//         const {name,email,password } = req.body;
+//         const signup = new signupModel({
+//             name,
+//            email,
+//            password,
+//         });
      
 
-        console.log("signup done");
-        await signup.save();
+//         console.log("signup done");
+//         await signup.save();
         
     
-});
+// });
+app.use('/sign-up', signupRouter);
+app.use('/log-in', loginRouter);
+
+
 app.post('/user-data', async (req, res) => {
 
     const {productName,productDescription,productPrice,productUrl} = req.body;

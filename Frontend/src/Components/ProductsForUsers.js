@@ -36,7 +36,7 @@ const ProductsForUsers = () => {
             alt={iteme.productName}
             style={{ width: '100%', height: '200px', objectFit: 'cover', borderTopLeftRadius: '15px', borderTopRightRadius: '15px', overflow: 'hidden', backgroundColor: "black" }}
           />
-          <div className="card-body" style={{ borderBottomLeftRadius: '15px', borderBottomRightRadius: '15px', overflow: 'hidden', backgroundColor: "black" }}>
+          <div className="card-body" style={{ borderBottomLeftRadius: '15px', borderBottomRightRadius: '15px', overflow: 'hidden', backgroundColor: "black",height:"300px"}}>
             <p>ID: {iteme._id}</p>
             <h5 className="card-title">Name: {iteme.productName}</h5>
             <p className="card-text">Description: {iteme.productDescription}</p>

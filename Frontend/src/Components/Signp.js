@@ -4,7 +4,7 @@ import { signup } from '../Services/api';
 import { FcGoogle } from "react-icons/fc";
 import { GoogleLogin, useGoogleLogin } from '@react-oauth/google';
 import { jwtDecode } from "jwt-decode";
-import { UseGoogleLogin } from '@react-oauth/google';
+// import { useGoogleLogin } from '@react-oauth/google';
 export default function Signp() {
 
     const [formdata,setformdata] = useState({
@@ -28,18 +28,20 @@ export default function Signp() {
         }
         signup(formdata);
     };
-    const login = useGoogleLogin({
-        // onSuccess: (credentialResponse) => {
-            // const decodedToken = jwtDecode(credentialResponse.credential);
-            // console.log('Decoded Token:', decodedToken);
-            onSuccess:(tokenResponse) =>console.log(tokenResponse),
-            // setformdata({
-            //     ...formdata,
-            //     name: credentialResponse.profileObj.name,
-            //     email: credentialResponse.profileObj.email,
-            // });
-        // },
-    });
+    // const login = useGoogleLogin({
+    //     onSuccess: (credentialResponse) => {
+    //         const decodedToken = jwtDecode(credentialResponse.credential);
+    //         console.log('Decoded Token:', decodedToken);
+    //         onSuccess:tokenResponse =>console.log(tokenResponse),
+    //         setformdata({
+    //             ...formdata,
+    //             name: credentialResponse.profileObj.name,
+    //             email: credentialResponse.profileObj.email,
+    //         });
+    //     },
+    // });
+
+
     
   return (
     <>
@@ -70,15 +72,17 @@ export default function Signp() {
             <p className='text-center mt-2'> Forget Password?
             <Link to="/login" >Login</Link>
             <div>
-            <button className='btn btn-light mt-3 border border-black' onClick={()=>login() }> <span><FcGoogle  style={{fontSize:"2em"}}/></span> Sign-Up with Google</button>
-            {/* <GoogleLogin  clientId="196956285530-kvnvv5jq8r4vd5voq69u0hqq1j7eat6b.apps.googleusercontent.com"
+            {/* <button className='btn btn-light mt-3 border border-black'  onClick={()=>login() }> <span><FcGoogle  style={{fontSize:"2em"}}/></span> Sign-Up with Google</button> */}
+            <GoogleLogin 
+            
             onSuccess={(credentialResponse) =>{
                 const decodedToken = jwtDecode(credentialResponse.credential);
+               
                 console.log('Decoded Token:', decodedToken);
             }}
     onError={()=>{
         console.log("login failed")
-    }}/> */}
+    }}/>
             </div>
             </p>
         </form>

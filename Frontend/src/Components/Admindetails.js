@@ -41,11 +41,11 @@ const Admindetails = () => {
 
 
   return (
-    <div>
+    
 
-<div className="grid-containe">
+<div className="grid-container" style={{width:"100%"}}>
 
-      <div className="grid-item">  <table className="custom-table">
+      <div className="grid-item" >  <table className="custom-table">
        
       <thead>
         <tr>
@@ -53,8 +53,8 @@ const Admindetails = () => {
           <th>Product Name</th>
           <th>Category</th>
           <th>Description</th>
-          <th>Type</th>
           <th>Stock</th>
+          <th>Type</th>
           <th>Available Units</th>
           <th>Build Year </th>
           <th>Sale Price</th>
@@ -80,37 +80,11 @@ const Admindetails = () => {
         ))} 
       </tbody>
     </table></div>
-      <div className="grid-item"> <div className='container' style={{backgroundColor:"antiquewhite"}}>
-        <h3 className='text-center'>User Products</h3>
-        <div>
-        </div>
-        
-       </div >
-       <div class="container mb-3"  style={{maxWidth:"700px",border:"none"}}>
-       {data.map(iteme => (
-         <div class="row g-0">
-          <div class="col-md-4">
-  <img
-    src={iteme.productUrl}
-    class="img-fluid rounded-start"
-    style={{ height: "100%", width: "100%", objectFit: "cover", objectPosition: "center" }}
-  />
-</div>
-
-           <div class="col-md-6" style={{border:"1px solid black"}}>
-             <div class="card-body" style={{backgroundColor:"white"}}>
-               <h5 class="card-title" style={{fontWeight:"bold",color:"black"}}> {iteme.productName}</h5>
-               <p class="card-text" style={{fontWeight:"bold",color:"black"}}>Description: {iteme.productDescription}</p>
-               <p className="card-text" style={{fontWeight:"bold",color:"black"}}>Price: {iteme.productPrice}</p>
-               </div>
-               </div>
-      </div>
-     ))} 
-    </div></div>
+     
 
     </div>
 
-    </div>
+  
   );
 };
 export default Admindetails;
