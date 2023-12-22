@@ -18,7 +18,7 @@ export default function Carosel() {
         <div className='produc'>
         <div id="carouselExample" class="carousel slide">
   <div class="carousel-inner">
-    <div class="carousel-item active" style={{overflow:'hidden',height:"700px",width:"800px",objectFit:'cover'}}>
+    <div class="carousel-item active" style={{overflow:'hidden',objectFit:'cover'}}>
       <img src="https://images.pexels.com/photos/16923176/pexels-photo-16923176/free-photo-of-close-up-of-an-antique-pocket-watch.jpeg?auto=compress&cs=tinysrgb&w=1600" class="d-block w-100" alt="..."/>
     </div>
     <div class="carousel-item" style={{overflow:'hidden',height:"700px",width:"800px",objectFit:'cover'}}>

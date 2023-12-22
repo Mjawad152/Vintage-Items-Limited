@@ -2,8 +2,6 @@ import mongoose from 'mongoose';
 import express from 'express';
 import bodyParser from 'body-parser';
 import cors from 'cors';
-import multer from 'multer';
-import path from 'path';
 import { YourModel } from "./models/yourModel.js";
 import { userModel }from './models/userModel.js';
 import signupRouter from './routes/signupRouter.js';
@@ -14,11 +12,11 @@ const port = 5000;
 app.use(bodyParser.json());
 app.use(cors());
 app.use(cors({
-  origin:["https://vintage-items-limited-frontend.vercel.app"],
-  methods:["POST","GET"],
- 
-}
-));
+    origin: ["https://vintage-items-limited-frontend.vercel.app"],
+    methods: ["POST", "GET"],
+    optionsSuccessStatus: 204, // some legacy browsers (IE11, various SmartTVs) choke on 204
+  }));
+  
 mongoose.connect('mongodb+srv://Jawad:123@cluster0.pcrerog.mongodb.net/?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true });
 
 

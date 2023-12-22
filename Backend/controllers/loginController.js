@@ -1,7 +1,7 @@
 import { signupModel } from "../models/signupModel.js";
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
-import loginware from "../middleware/loginware.js";
+// import loginware from "../middleware/loginware.js";
 const secretKey = "5512"; 
 
 export const loginController = async (req, res) => {
