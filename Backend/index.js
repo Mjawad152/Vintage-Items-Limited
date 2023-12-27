@@ -13,8 +13,8 @@ app.use(bodyParser.json());
 app.use(cors());
 app.use(cors({
     origin: ["https://vintage-items-limited-frontend.vercel.app"],
-    methods: ["POST", "GET"],
-    optionsSuccessStatus: 204, // some legacy browsers (IE11, various SmartTVs) choke on 204
+    methods: ["POST", "GET","DELETE"],
+    
   }));
   
 mongoose.connect('mongodb+srv://Jawad:123@cluster0.pcrerog.mongodb.net/?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true });
@@ -48,8 +48,8 @@ app.post('/add-item', async (req, res) => {
     }
 });
 
-app.use('/sign-up', signupRouter);
-app.use('/log-in', loginRouter);
+// app.use('/sign-up', signupRouter);
+// app.use('/log-in', loginRouter);
 
 
 app.post('/user-data', async (req, res) => {
