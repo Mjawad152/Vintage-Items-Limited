@@ -13,7 +13,7 @@ app.use(bodyParser.json());
 
 app.use(cors({
     origin: ["https://vintage-items-limited-frontend.vercel.app"],
-    methods: ["POST", "GET",],
+    methods: ["POST", "GET"],
     
   }));
   
@@ -48,8 +48,8 @@ app.post('/add-item', async (req, res) => {
     }
 });
 
-// app.use('/sign-up', signupRouter);
-// app.use('/log-in', loginRouter);
+app.use('/sign-up', signupRouter);
+app.use('/log-in', loginRouter);
 
 
 app.post('/user-data', async (req, res) => {
