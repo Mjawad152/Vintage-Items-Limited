@@ -10,10 +10,10 @@ const app = express();
 const port = 5000;
 
 app.use(bodyParser.json());
-app.use(cors());
+
 app.use(cors({
     origin: ["https://vintage-items-limited-frontend.vercel.app"],
-    methods: ["POST", "GET","DELETE"],
+    methods: ["POST", "GET",],
     
   }));
   
